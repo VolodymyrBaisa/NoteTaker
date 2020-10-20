@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Voyager;
+  src: url(../fonts/voyager_heavy.woff);
+}
+
+html {
+  font-size: 0.65vw;
+  font-family: "Voyager", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../img/background.png") center center no-repeat;
+  background-size: cover;
+}
+
+li {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container_index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_index .svg_container {
+  margin: auto 20vw;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container_index svg {
+  -webkit-animation: 0.5s ease-out 0s 1 opacity, 0.5s ease-out 0s 1 scale;
+          animation: 0.5s ease-out 0s 1 opacity, 0.5s ease-out 0s 1 scale;
+}
+
+.container_note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_note .svg_container {
+  margin: 1vw 2.5vw;
+}
+
+.container_note .container {
+  position: relative;
+  width: calc(100% - 5vw);
+  height: 30vw;
+  background: rgba(0, 0, 0, 0.75);
+  border: 4px solid rgba(244, 244, 244, 0.75);
+  margin-top: 1vw;
+}
+
+.container_note .container .line_vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 4px solid rgba(244, 244, 244, 0.75);
+  width: 0;
+  margin: 2vw 0 0 20vw;
+}
+
+.container_note .container .line_horizontal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 4px solid rgba(244, 244, 244, 0.75);
+  margin: 5vw 2vw 0 calc(20vw + 4px);
+}
+
+.container_note .container #clearButton {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  width: 2vw;
+}
+
+.container_note .container .note_title {
+  position: absolute;
+  top: 2vw;
+  right: 0;
+  height: 2.5vw;
+  width: 68vw;
+  left: calc(20.5vw + 4px);
+  background: none;
+  border: none;
+  font-family: "Voyager", sans-serif;
+  color: #f4f4f4;
+}
+
+.container_note .container .note_content {
+  position: absolute;
+  top: 6.2vw;
+  left: calc(20.5vw + 4px);
+  width: 71.15vw;
+  bottom: 0.5vw;
+  right: 0;
+  background: none;
+  border: none;
+  resize: none;
+  font-family: "Turret Road", cursive;
+  color: #f4f4f4;
+}
+
+.container_note .container .notes_save_container {
+  position: absolute;
+  top: 5vw;
+  bottom: 0;
+  width: 20vw;
+}
+
+.container_note .back_button_container {
+  margin: 2vw 100% 0 5vw;
+  width: 15.5vw;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.container_note .note_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #021a3c;
+  padding: 0 0.5vw;
+  margin-top: 0.2vw;
+}
+
+.container_note .note_container .title {
+  color: #f4f4f4;
+}
+
+.container_note .note_container .remove_note,
+.container_note .note_container .remove_note_hover {
+  width: 2vw;
+  cursor: pointer;
+}
+
+.container_note .note_container .remove_note {
+  display: block;
+}
+
+.container_note .note_container .remove_note_hover {
+  display: none;
+}
+
+.container_note .note_container .wrapper:hover .remove_note {
+  display: none;
+}
+
+.container_note .note_container .wrapper:hover .remove_note_hover {
+  display: block;
+}
+
+.container_note .note_container:nth-child(1) {
+  margin-top: 0vw;
+}
+
+.alert_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  margin: auto 30vw;
+}
+
+.active {
+  display: block;
+}
+
+@-webkit-keyframes twinkle {
+  0% {
+    fill: #304560;
+  }
+  50% {
+    fill: #021a3c;
+  }
+  100% {
+    fill: #304560;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    fill: #304560;
+  }
+  50% {
+    fill: #021a3c;
+  }
+  100% {
+    fill: #304560;
+  }
+}
+
+.button {
+  fill: #021a3c;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-animation: 1s linear 0.1 twinkle;
+          animation: 1s linear 0.1 twinkle;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.button_text {
+  pointer-events: none;
+}
+/*# sourceMappingURL=styles.css.map */

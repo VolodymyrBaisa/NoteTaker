@@ -1,0 +1,44 @@
+$primary-font-color: #f4f4f4;
+
+$primary-color: #021a3c;
+$secondary-color: #f4f4f4;
+$third-color-a: rgba(0, 0, 0, 0.5);
+$fourth-color-a: rgba(244, 244, 244, 0.75);
+
+$left-right-margin: 3%;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "global";
+@import "index";
+@import "notes";
+
+@keyframes twinkle {
+    0% {
+        fill: #304560;
+    }
+    50% {
+        fill: #021a3c;
+    }
+    100% {
+        fill: #304560;
+    }
+}
+
+.button {
+    fill: $primary-color;
+    cursor: pointer;
+    &:hover {
+        animation: 1s linear 0.1 twinkle;
+        animation-iteration-count: infinite;
+    }
+}
+
+.button_text {
+    pointer-events: none;
+}

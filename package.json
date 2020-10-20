@@ -1,0 +1,22 @@
+{
+  "name": "week11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolodymyrBaisa/NoteTaker.git"
+  },
+  "author": "Volodymyr Baisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VolodymyrBaisa/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/VolodymyrBaisa/NoteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
